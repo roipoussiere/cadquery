@@ -2657,6 +2657,7 @@ class TestCadQuery(BaseTest):
     def testText(self):
 
         box = Workplane("XY").box(4, 4, 0.5)
+        print('box:', box)
 
         obj1 = (
             box.faces(">Z")

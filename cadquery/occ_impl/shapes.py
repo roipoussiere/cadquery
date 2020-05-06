@@ -1949,7 +1949,9 @@ class Compound(Shape, Mixin3D):
         }[kind]
 
         text_flat = Shape(text_to_brep(text, font, font_kind, size, False))
+        print('text_flat', text_flat)
         bb = text_flat.BoundingBox()
+        print('bb', bb)
 
         t = Vector()
 
